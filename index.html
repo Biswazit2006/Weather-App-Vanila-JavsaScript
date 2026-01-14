@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- StyleSheets -->
-     <link rel="stylesheet" href="style.css">
-    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <title>My</title>
 </head>
+
 <body>
-    <div class="container">
-        <main class="main-container">
-            <div class="left-container">
-                <div class="main-left-top">
-                    <img src="Assets/weatherLogo.svg" alt="Weather" id="icon">
-                    <div class="temp-swap-btn">
-<!-- From Uiverse.io by guilhermeyohan --> 
-<div class="checkbox-apple">
-  <input class="yep" id="check-apple" type="checkbox">
-  <label for="check-apple"></label>
-</div>
-                    </div>
+    <nav class="nav-bar ">
+        <div class="nav-left">
+            <img src="../Assets/location.svg" alt="location icon">
+            <p id="locationCity">Rajshahhi</p>
+        </div>
+        <input type="text" id="input" placeholder="Search City" class="glass-effect">
+    </nav>
+    <main class="main-container">
+        <div class="main-first">
+            <!-- svg here -->
+            <img src="../Assets/weatherLogo.svg" alt="weather logo" class="main-weather-logo" id="weatherIcon">
+            <p class="main-temp-pera" id="temp">26C</p>
+            <p class="main-today-info" id="todayInfo">Clear 25/11</p>
+            <div class="main-date-day-time glass-effect">
+                <p class="main-date" id="date">11 January 2026</p>
+                <p class="main-day" id="dayAndTime">Sunday <span>07:40 AM</span></p>
+            </div>
+            <div class="main-info-bar">
+                <div class="main-infoBar-card glass-effect">
+                    <p>Feels Like</p>
+                    <img src="../Assets/feels-like.svg" alt="windSpeed">
+                    <p id="feelsLike">10 C</p>
                 </div>
-                <h3 class="main-left-temp" id="temp"></h3>
-                <p class="main-left-date" id="date">14 March 2026</p>
-                <p class="main-left-day" id="dayAndTime">Monday <span class="main-left-time">01:04Pm</span></p>
-                <div class="main-left-info-bar">
-                    <div class="mainLeft-infoBar-div glass-effect"> <p>Feels like</p><p id="feelsLike">25C</p></div>
-                    <div class="mainLeft-infoBar-div glass-effect"> <p>Wind</p><p id="windSpeeed">10 km/h</p></div>
-                    <div class="mainLeft-infoBar-div glass-effect"> <p>Humidity</p><p id="humidity">60%</p></div>
-                    <div class="mainLeft-infoBar-div glass-effect"> <p>Rain</p><p id="">20%</p></div>
+                <div class="main-infoBar-card glass-effect">
+                    <p>Wind</p>
+                    <img src="../Assets/speed.svg" alt="windSpeed">
+                    <p id="windSpeeed">10Km/h</p>
                 </div>
-                <div class="days-div">
-                    <div class="days-div-days-info">
-                        <p class="div-days-info-temp">25C</p>
-                        <img src="Assets/weatherLogo.svg" alt="weatherLogo" class="div-days-info-logo">
-                        <p class="div-days-info-days">02:00 PM</p>
-                    </div>
-                    <div class="days-div-days-info">
-                        <p class="div-days-info-temp">25C</p>
-                        <img src="Assets/weatherLogo.svg" alt="weatherLogo" class="div-days-info-logo">
-                        <p class="div-days-info-days">02:00 PM</p>
-                    </div>
-                    <div class="days-div-days-info">
-                        <p class="div-days-info-temp">25C</p>
-                        <img src="Assets/weatherLogo.svg" alt="weatherLogo" class="div-days-info-logo">
-                        <p class="div-days-info-days">02:00 PM</p>
-                    </div>
-                    <div class="days-div-days-info">
-                        <p class="div-days-info-temp">25C</p>
-                        <img src="Assets/weatherLogo.svg" alt="weatherLogo" class="div-days-info-logo">
-                        <p class="div-days-info-days">02:00 PM</p>
-                    </div>
-                    <div class="days-div-days-info">
-                        <p class="div-days-info-temp">25C</p>
-                        <img src="Assets/weatherLogo.svg" alt="weatherLogo" class="div-days-info-logo">
-                        <p class="div-days-info-days">02:00 PM</p>
-                    </div>
+                <div class="main-infoBar-card glass-effect">
+                    <p>Humadity</p>
+                    <img src="../Assets/Humadity.svg" alt="Humadity">
+                    <p id="humidity">80%</p>
+                </div>
+                <div class="main-infoBar-card glass-effect">
+                    <p>Chance Of Rain</p>
+                    <img src="../Assets/rain.svg" alt="Rain">
+                    <p id="ChanceOfRAin">20%</p>
                 </div>
             </div>
-            <div class="right-container">
-                <div class="right-div-top">
-                    <img src="Assets/location.svg" alt="">
-                    <input type="text" class="glass-effect" id="input">
-                </div>
-                <div class="right-div-main">
-                    <div class="right-div-bar">
-                        <div class="right-div-bar-left">
-                            <p>Sunrise</p>
-                            <div class="right-div-infobar glass-effect">
-                                <p >07:30 AM</p>
-                                <img src="Assets/weatherLogo.svg" alt="sunset icon">
-                            </div>
-                        </div>
-                        <div class="right-div-bar-right " >
-                            <p>Sunset</p>
-                            <div class="right-div-infobar glass-effect">
-                                <p>05:30 PM</p>
-                                <img src="Assets/weatherLogo.svg" alt="sunset icon"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-div-bottom">
-                        <div class="right-div-bottom-box"><p>Humidity</p><p id="humidity2">38%</p></div>
-                        <div class="right-div-bottom-box"><p>Chance of rain</p><p>2%</p></div>
-                        <div class="right-div-bottom-box"><p>Air Quailty</p> <p>3/10</p><p>Moderate</p></div>
-                        <div class="right-div-bottom-box"><p>Wind speed</p><p>3.8 Km/h</p></div>
-                    </div>
+            <div class="main-today-podcast " id="todayPodcast">
+                <div class="today-podcast-card glass-effect">
+                    <p>11:30 AM</p>
                 </div>
             </div>
-        </main>
-    </div>
-    <script src="app.js"></script>
+
+        </div>
+        <div class="main-second">
+            <!-- Toggle Button -->
+            <label class="toggle-button">
+                <input type="checkbox">
+                <span class="button">
+                    <span class="c">C</span>
+                    <span class="f">F</span>
+                </span>
+            </label>
+            <div class="main-second-infocard glass-effect">
+                <p>Sunrise</p>
+                <img src="../Assets/weatherLogo.svg" alt="Sunrise">
+                <p>06:00 AM</p>
+            </div> 
+            <div class="main-second-infocard glass-effect">
+                <p>Sunset</p>
+                <img src="../Assets/weatherLogo.svg" alt="Sunset">
+                <p>06:00 AM</p>
+            </div> 
+        </div>
+    </main>
+    <section class="future-podcast">
+        <div class="future-podcast-container" id="futurePodcast">
+            <div class="future-podcast-card glass-effect">
+                <h6>Today</h6>
+                <p>22C / 11 C</p>
+                <img src="../Assets/weatherLogo.svg" alt="weather">
+                <p>15.4km/h</p>
+            </div>
+        </div>
+        <div class="this-day-podcast">
+            <div class="today-temp-div"></div>
+            <div class="today-p-maxTemp glass-effect">
+                <p>Maximun Tempareture</p>
+            </div>
+        </div>
+    </section>
+    <script src="./Script.js"></script>
 </body>
+
 </html>
