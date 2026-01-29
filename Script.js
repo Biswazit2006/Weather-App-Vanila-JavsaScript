@@ -28,7 +28,7 @@ let city = "Rajshahi"
 async function getCurrentWeather(location) {
   const apiKey = weatherApiKey;
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`
+    `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`
   );
   const data = await response.json();
   console.log(data)
@@ -61,7 +61,7 @@ getCurrentWeather(city);
 async function getForecast(location, days = 7) {
   const apiKey = weatherApiKey;
   const response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=${days}`
+    `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=${days}`
   );
   const data = await response.json();
   // console.log(data.location.localtime)
