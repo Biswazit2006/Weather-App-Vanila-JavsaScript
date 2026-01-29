@@ -1,4 +1,21 @@
 // +++++++++++++++++++++++++++++++++++++++++++++
+//  DOM Nodes
+// +++++++++++++++++++++++++++++++++++++++++++++
+const temp = document.getElementById("temp");
+const todayInfo = document.getElementById("todayInfo");
+const feelsLike = document.getElementById("feelsLike");
+const windSpeeed = document.getElementById("windSpeeed");
+const humidity = document.getElementById("humidity");
+const weatherIcon = document.getElementById("weatherIcon");
+const locationCity = document.getElementById("locationCity");
+const date = document.getElementById("date");
+const dayAndTime = document.getElementById("dayAndTime");
+const ChanceOfRAin = document.getElementById("ChanceOfRAin");
+const futurePodcast = document.getElementById("futurePodcast");
+const todayPodcast = document.getElementById("todayPodcast");
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++
 //  Current Weather Data Fetching
 // +++++++++++++++++++++++++++++++++++++++++++++
 const weatherApiKey = '83b48667693f40088ad191656260901';
